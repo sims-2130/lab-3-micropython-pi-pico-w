@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "22UG3-0163 Mohomed Muzammil Simla",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20241129-v1.24.1" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -47.7, "left": -159, "attrs": {} }
+  ],
+  "connections": [
+    [ "dht1:VCC", "pico:3V3", "red", [ "v38.4", "h67.2", "v0", "h38.4", "v-124.8", "h124.8" ] ],
+    [ "dht1:SDA", "pico:GP7", "green", [ "v28.8", "h0.1" ] ],
+    [ "dht1:GND", "pico:GND.1", "black", [ "v-9.6", "h105.6" ] ]
+  ],
+  "dependencies": {}
+}
